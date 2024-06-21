@@ -1,13 +1,12 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
-import Tilt from "react-parallax-tilt";
+import { Col, Container, Row } from "react-bootstrap";
 import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
+  AiOutlineYoutube
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
+import Tilt from "react-parallax-tilt";
+
+import myImg from "../../Assets/adnan.jpg";
 
 function Home2() {
   return (
@@ -19,19 +18,19 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              My life changed when I started programming in my second year of computer science! Since then, I've worked in various areas of programming at big companies like Google. Right now, I'm a Node.js Backend Developer at Workday in Dublin.
+              My life changed when I started programming in my second year of computer science! Since then, Programming helped me to work with big tech industries like Workday, Google.
             <br />
-                <br />I spend my time thinking about how I can help people more and make a lasting impact.
-                <br />
-          Currently, I'm training several engineers and computer science students for their careers and studies. 
-                <br />
+            <br />
+                Currently, while working as a Backend Developer, I'm also training several junior engineers and computer science students for their careers and studies. 
+            <br />
+            <br />
                 I also run a YouTube channel where I share my knowledge with enthusiastic learners.
-              &nbsp; like
+              &nbsp; 
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
@@ -41,15 +40,26 @@ function Home2() {
             <p>
               Feel free to <span className="purple">connect </span>with me
             </p>
+
             <ul className="home-about-social-links">
-                <li className="social-icons">
+            <li className="social-icons">
                 <a
-                  href="linkedin.com/in/nafiul-adnan"
+                  href="https://www.facebook.com/nafiuladnan/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <FaYoutube />
+                  <FaFacebook />
+                </a>
+              </li>
+                <li className="social-icons">
+                <a
+                  href="https://www.youtube.com/@NafiulAdnanChowdhuryn"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiOutlineYoutube />
                 </a>
               </li>
               <li className="social-icons">
