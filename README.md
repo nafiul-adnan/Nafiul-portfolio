@@ -20,7 +20,7 @@
 
 ## Special note
 
-Although I've added most of the pages and my details, this project was originally forked from www.soumyajit.vercel.app. I'm working on it in my free time to give it a new look that I like. However, I'm not a frontend developer and don't know how to center a div!
+Although I've added most of the pages and my details, this project was originally forked from www.soumyajit.vercel.app & https://cuteblog.vercel.app/ I'm working on it in my free time to give it a new look that I like. However, I'm not a frontend developer and don't know how to center a div!
 
 If you'd like to practice your React skills, feel free to give it a shot and create a pull request. Who knows, you might even receive a small gift from me! 😉
 

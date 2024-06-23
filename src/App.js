@@ -4,14 +4,15 @@ import {
   Navigate,
   Route,
   BrowserRouter as Router,
-  Routes
+  Routes,
 } from "react-router-dom";
 import Preloader from "../src/components/Pre";
 import "./App.css";
 import About from "./components/About/About";
 import Footer from "./components/Footer";
 import Home from "./components/Home/Home";
-import Mentoring from "./components/Mentoring/mentoring";
+import Mentoring from "./components/Mentoring/Mentoring";
+import SinglePage from "./components/Mentoring/SinglePage";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/ResumeNew";
@@ -41,7 +42,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/mentoring" element={<Mentoring />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="/article/:name" component={SinglePage} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>
